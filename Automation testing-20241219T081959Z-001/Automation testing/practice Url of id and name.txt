@@ -1,0 +1,110 @@
+Ambati Upendhar
+
+https://demo.opencart.com/
+http://www.automationpractice.pl/index.php?controller=authentication&back=my-account
+https://www.letskodeit.com/practice
+https://www.login.hiox.com/register?referrer=easycalculation.com
+https://www.login.hiox.com/login?referrer=easycalculation.com
+https://www.easycalculation.com/
+https://store.webkul.com/
+http://automationpractice.com/index.php
+https://www.easemytrip.com/
+https://auth.hollandandbarrett.com/u/login
+
+
+Automation Program
+
+from selenium import webdriver
+from selenium.webdriver import Keys
+from selenium.webdriver.common.by import By
+import time
+
+# Initialize WebDriver
+driver = webdriver.Chrome()
+
+
+driver.get("http://www.automationpractice.pl/index.php?controller=authentication&back=my-account")
+
+# Maximize the browser window
+driver.maximize_window()
+time.sleep(5)
+
+edit_box = driver.find_element(By.ID, "email")
+edit_box.send_keys("208r1a05i2cse@gmail.com")
+edit_box.send_keys(Keys.RETURN)
+time.sleep(5)
+
+edit_box = driver.find_element(By.NAME, "password")
+edit_box.send_keys("Lasmaiah@5014")
+edit_box.send_keys(Keys.RETURN)
+time.sleep(5)
+
+
+Letskodeit Program
+
+from selenium import webdriver
+from selenium.webdriver import Keys
+from selenium.webdriver.common.by import By
+import time
+
+# Initialize WebDriver
+driver = webdriver.Chrome()
+
+
+driver.get("https://www.letskodeit.com/login")
+
+# Maximize the browser window
+driver.maximize_window()
+time.sleep(5)
+
+edit_box = driver.find_element(By.ID, "email")
+edit_box.send_keys("208r1a05i2cse@gmail.com")
+edit_box.send_keys(Keys.RETURN)
+time.sleep(5)
+
+edit_box = driver.find_element(By.NAME, "password")
+edit_box.send_keys("Lasmaiah@5014")
+edit_box.send_keys(Keys.RETURN)
+time.sleep(5)
+
+
+Loginhiox Program
+
+from selenium import webdriver
+from selenium.webdriver import Keys
+from selenium.webdriver.common.by import By
+import time
+
+# Initialize WebDriver
+driver = webdriver.Chrome()
+
+
+driver.get("https://www.login.hiox.com/login?referrer=easycalculation.com")
+
+# Maximize the browser window
+driver.maximize_window()
+time.sleep(5)
+
+edit_box = driver.find_element(By.ID, "log_email")
+edit_box.send_keys("208r1a05i2cse@gmail.com")
+edit_box.send_keys(Keys.RETURN)
+time.sleep(5)
+
+edit_box = driver.find_element(By.NAME, "log_password")
+edit_box.send_keys("Lasmaiah@5014")
+edit_box.send_keys(Keys.RETURN)
+time.sleep(5)
+
+Hallon&Barette
+
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+driver=webdriver.Chrome()
+driver.get("https://auth.hollandandbarrett.com/u/login")
+driver.maximize_window()
+time.sleep(6)
+driver.find_element(By.ID,'username').send_keys("208r1a05i2cse@gmail.com")
+driver.find_element(By.NAME,'password').send_keys("Lasmaiah@5014")
+time.sleep(8)

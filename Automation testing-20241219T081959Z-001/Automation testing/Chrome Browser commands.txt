@@ -1,0 +1,179 @@
+Upendhar Ambati
+
+User Should Open URL By
+
+            a. Chrome Browser
+
+            b. Edge Browser
+
+            c. Firefox Browser 
+
+      2.Open URL: Below
+
+      3.Get Page Title name and Title length
+
+      4.Print Page Title and Title length on the Console
+
+      5.Get page URL and verify whether it is the desired page or not
+
+      6.Get page Source and Page Source length
+
+      7.Print page Length on Console.
+
+      8.Close the Browser
+
+ 
+
+Url: https://opensource-demo.orangehrmlive.com/ 
+
+url: https://demo.opencart.com/
+
+url: http://www.bing.com 
+
+url: https://www.freecrm.com/ 
+
+url: http://www.half.ebay.com 
+------------------------------------------------------------------------------------------
+__________________________________________________________________________________________
+
+Chrome Browser for Orangehrm
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+baseUrl ="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+driver=webdriver.Chrome()
+driver.maximize_window()
+driver.get(baseUrl)
+title=driver.title
+print("Title of the page is:"+ title)
+currentUrl=driver.current_url
+print("Current Url of the page is:" + currentUrl)
+driver.refresh()
+print("Browser refresh 1st time")
+driver.get(driver.current_url)
+print("Browser refreshed 2nd time")
+driver.get("https://www.freecrm.com/en")
+currentUrl=driver.current_url
+print("Current url of the web page is:" + currentUrl)
+driver.back()
+print("Go on step back in browser history")
+currentUrl=driver.current_url
+pageSource = driver.page_source
+print(pageSource.encode("utf-8"))
+driver.quit()
+
+
+____________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+Chrome Browser for Bing
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+baseUrl ="https://www.bing.com/"
+driver=webdriver.Chrome()
+driver.maximize_window()
+driver.get(baseUrl)
+title=driver.title
+print("Title of the page is:"+ title)
+currentUrl=driver.current_url
+print("Current Url of the page is:" + currentUrl)
+driver.refresh()
+print("Browser refresh 1st time")
+driver.get(driver.current_url)
+print("Browser refreshed 2nd time")
+driver.get("https://www.prokabaddi.com/")
+currentUrl=driver.current_url
+print("Current url of the web page is:" + currentUrl)
+driver.back()
+print("Go on step back in browser history")
+currentUrl=driver.current_url
+pageSource = driver.page_source
+print(pageSource.encode("utf-8"))
+driver.quit()
+____________________________________________________________________________________________________________________________________________________________________________________
+Chrome Browser for cogmento
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+baseUrl ="https://ui.cogmento.com/?lang=en"
+driver=webdriver.chrome()
+driver.maximize_window()
+driver.get(baseUrl)
+title=driver.title
+print("Title of the page is:"+ title)
+currentUrl=driver.current_url
+print("Current Url of the page is:" + currentUrl)
+driver.refresh()
+print("Browser refresh 1st time")
+driver.get(driver.current_url)
+print("Browser refreshed 2nd time")
+driver.get("https://www.prokabaddi.com/")
+currentUrl=driver.current_url
+print("Current url of the web page is:" + currentUrl)
+driver.back()
+print("Go on step back in browser history")
+currentUrl=driver.current_url
+pageSource = driver.page_source
+print(pageSource.encode("utf-8"))
+driver.quit()
+____________________________________________________________________________________________________________________________________________________________________________________
+
+
+Chrome Broser for eBAY
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+baseUrl ="https://www.ebay.com/"
+driver=webdriver.Chrome()
+driver.maximize_window()
+driver.get(baseUrl)
+title=driver.title
+print("Title of the page is:"+ title)
+currentUrl=driver.current_url
+print("Current Url of the page is:" + currentUrl)
+driver.refresh()
+print("Browser refresh 1st time")
+driver.get(driver.current_url)
+print("Browser refreshed 2nd time")
+driver.get("https://www.iplt20.com/auction")
+currentUrl=driver.current_url
+print("Current url of the web page is:" + currentUrl)
+driver.back()
+print("Go on step back in browser history")
+currentUrl=driver.current_url
+pageSource = driver.page_source
+print(pageSource.encode("utf-8"))
+driver.quit()
+____________________________________________________________________________________________________________________________________________________________________________________
+ Chrome Browswer for open cart
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+baseUrl ="https://demo.opencart.com/index.php?"
+driver=webdriver.Chrome()
+driver.maximize_window()
+driver.get(baseUrl)
+title=driver.title
+print("Title of the page is:"+ title)
+currentUrl=driver.current_url
+print("Current Url of the page is:" + currentUrl)
+driver.refresh()
+print("Browser refresh 1st time")
+driver.get(driver.current_url)
+print("Browser refreshed 2nd time")
+driver.get("https://www.iplt20.com/auction")
+currentUrl=driver.current_url
+print("Current url of the web page is:" + currentUrl)
+driver.back()
+print("Go on step back in browser history")
+currentUrl=driver.current_url
+pageSource = driver.page_source
+print(pageSource.encode("utf-8"))
+driver.quit()
